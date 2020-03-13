@@ -28,7 +28,7 @@ dependencies {
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:27.1-jre'
     
- // swagger libraries 
+    // swagger libraries 
 	implementation group: 'io.swagger', name: 'swagger-jersey2-jaxrs', version: '1.5.24'
 	implementation group: 'io.swagger', name: 'swagger-annotations', version: '1.5.24'
 	implementation group: 'org.webjars', name: 'swagger-ui', version: '3.24.3'
@@ -41,7 +41,7 @@ dependencies {
    	implementation "org.glassfish.jersey.core:jersey-server:2.28"
    	
    	
-// JAX-RS and Jersey
+    // JAX-RS and Jersey
     implementation "org.glassfish.jersey.core:jersey-server:2.28"
     implementation "org.glassfish.jersey.containers:jersey-container-servlet-core:2.28"
     implementation group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '2.29'
@@ -52,30 +52,19 @@ dependencies {
 	implementation "org.eclipse.jetty.aggregate:jetty-all:9.0.4.v20130625"
 
     // Use JUnit test framework
-       testImplementation 'junit:junit:4.12'
-   // testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: "5.${junit5MinorVersion}"
-   // testImplementation group: 'org.junit.platform', name: 'junit-platform-launcher', version: "1.${junit5MinorVersion}"
+    testImplementation 'junit:junit:4.12'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.2.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.2.0'
     testImplementation 'org.junit.vintage:junit-vintage-engine:5.2.0'
     testImplementation "org.junit.platform:junit-platform-commons:1.4.0"
     testImplementation "org.junit.platform:junit-platform-launcher:1.4.0"
- 	
  	testImplementation 'org.powermock:powermock-api-mockito2:2.0.2'
     testImplementation 'org.powermock:powermock-module-junit4:2.0.2'
-    
     testImplementation "org.testcontainers:junit-jupiter:1.11.1"
- 
-    
-  
-    //testImplementation files ('/Users/skendole/CSPC/ie-sourcecode/ie-app-common/build/libs/ie-app-common-1.0.0-SNAPSHOT.jar') 
     testImplementation (group:'org.glassfish.jersey.test-framework',name:'jersey-test-framework-core',version:'2.27')
     testImplementation (group:'org.glassfish.jersey.test-framework.providers',name:'jersey-test-framework-provider-inmemory',version:'2.27')
     testImplementation (group:'org.glassfish.jersey.inject',name:'jersey-hk2',version:'2.27')
-    
-    testImplementation group: 'org.postgresql', name: 'postgresql', version: '42.2.8'
     testImplementation 'javax.servlet:javax.servlet-api:3.1.0'
     testImplementation ("org.eclipse.jetty.aggregate:jetty-all:9.0.4.v20130625")
-   
     testImplementation group: 'org.skyscreamer', name: 'jsonassert', version: '1.5.0'
 }
